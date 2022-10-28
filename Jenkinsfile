@@ -33,7 +33,7 @@ pipeline {
         failure {
         script {
             print("post jenkins stage")
-            def mail_recipient_int= "mannuruvenkata.bhanuchandar@ltts.com; aswathy.ullas@ltts.com"
+            def mail_recipient_int= "aswathy.ullas@ltts.com"
 
             env.mail_recipient=mail_recipient_int + env.GIT_COMMITTER_EMAIL
 
@@ -47,7 +47,7 @@ pipeline {
 
                     emailext (
 
-                            from: 'mannuruvenkata.bhanuchandar@ltts.com',
+                            from: 'aswathyrullas99@gmail.com',
 
                             mimeType: 'text/html',
 
