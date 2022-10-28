@@ -33,7 +33,7 @@ pipeline {
         failure {
         script {
             print("post jenkins stage")
-            def mail_recipient_int= "aswathy.ullas@ltts.com"
+            def mail_recipient_int= "aswathy.ullas@ltts.com; dhanasekar.b@ltts.com"
 
             env.mail_recipient=mail_recipient_int + env.GIT_COMMITTER_EMAIL
 
