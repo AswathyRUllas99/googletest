@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('GIT SCM') {
             steps {
-                git branch: 'main', url: 'https://github.com/AswathyRUllas99/googletest.git'
+                git branch: 'master', url: 'https://github.com/AswathyRUllas99/googletest.git'
             }
         }
         stage('Cmake Build') {
